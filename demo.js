@@ -65,8 +65,15 @@ function mimicServerCall() {
       // After 300ms, the Promise is resolved with a message string
       resolve("Pretend remote server notified of action!");
     }, 300);
+    /**setTimeout(function() {
+      // After 200ms, the Promise is rejected with a message string
+      reject("Random server error. Try again.");
+    }, 400);**/
   });
 }
-
+// A Promise is a JavaScript object that links "asynchronous" operations (like
+// fetching data from a server) to "synchronous" operations (like updating the
+// screen). A Promise is created with a function that accepts two arguments:
+// resolve and reject
 //resolve: Call this function when the asynchronous operation is successful. It will mark the Promise as "fulfilled" and pass a value to .then().
 //reject: Call this function when the operation fails. It will mark the Promise as "rejected" and pass an error to .catch().
