@@ -68,3 +68,5 @@ function mimicServerCall() {
   });
 }
 
+//resolve: Call this function when the asynchronous operation is successful. It will mark the Promise as "fulfilled" and pass a value to .then().
+//reject: Call this function when the operation fails. It will mark the Promise as "rejected" and pass an error to .catch().
